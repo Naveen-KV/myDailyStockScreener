@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>STOCK SCREENER</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+</head>
+<body style="background-color:#1c87c9;">
+<br>
+<h1> <centre> Welcome To My Daily Stock Screener </centre></h1>
+
+
+
+    <br><br><br>
+
+    <form action="/values" method="POST" >
+
+        <div class="column">
+            <h3>Price Volume Action Screener</h3>
+            <span>Minimum Stock Price </span>
+            <br><input type="text" name="price" style="height:15px; width:100px;"><br><br>
+            <span>Daily Price Change (%) </span>
+            <br> <input type="text" name="pchange" style="height:15px; width:100px;"><br><br>
+            <span> Volume X </span>
+            <br> <input type="text" name="volx" style="height:15px; width:100px;"><br><br>
+        </div>
+
+
+            <div class="column">
+                <h3>Technical Analysis Screener</h3>
+                <span> Stock Price Greater than  </span> <br>
+                <select name="EMA" id="EMA" required="required">
+                                <option value="EMA13">EMA13</option>
+                                <option value="EMA21">EMA21</option>
+                                <option value="EMA51">EMA13 & EMA21</option>
+
+
+                </select>
+                <br>
+                <br>
+                <span>ADX </span>
+               <br> <input type="text" name="adx" style="height:15px; width:100px;"><br><br>
+                <br>
+                <br>
+                <br>
+                 <input type="submit" value="Submit">
+            </div>
+
+            <div class="column">
+                <h3>Fundamental Analysis Screener</h3>
+
+                <input type="checkbox" id="leash" name="qopm" value = "on">
+                <label for="Leash">Quarter OPM</label><br>
+                <input type='hidden' name="qopm" value="off">
+                <input type="checkbox" id="leash1" name="yopm" value = "on">
+                <label for="Leash1">Year OPM</label><br>
+                <input type='hidden' name="yopm" value="off">
+                <input type="checkbox" id="leash2" name="promc" value = "on">
+                <label for="Leash2">Quarter Change in Promoter Shareholding</label><br>
+                <input type='hidden' name="promc" value="off">
+                <input type="checkbox" id="leash3" name="borrow" value = "on">
+                <label for="Leash3"> Borrowing</label><br>
+                <input type='hidden' name="borrow" value="off">
+                <input type="checkbox" id="leash4" name="fassets" value = "on">
+                <label for="Leash4"> Fixed Assets</label><br>
+                <input type='hidden' name="fassets" value="off">
+                <input type="checkbox" id="leash5" name="prom" value = "on">
+                <label for="Leash5">Promoter Share Holding % </label><br>
+                <input type='hidden' name="prom" value="off">
+            </div>
+
+
+
+                <br>
+                <br>
+                <br>
+
+
+
+<br><br><br>
+
+
+
+
+
+</form>
+
+</body>
+</html>
