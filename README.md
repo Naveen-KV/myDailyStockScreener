@@ -10,4 +10,4 @@ web scraping and pandas data processing.
 
 The shortlisted stocks are again filtered using fundamental analysis parameters again input by the user and fundamental parameters collected using web scraping.
 
-the final list is made available to the user for final decision
+The final list is made available to the user for final decision
